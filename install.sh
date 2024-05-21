@@ -92,7 +92,7 @@ echo "... creating $BNC_FULLNODE_DIR"
 if [ -d "$BNC_FULLNODE_DIR" ]; then
   echo "... Error: Binance Chain Fullnode has already been installed"
   echo "... Error: Please remove contents of ${BNC_FULLNODE_DIR} before reinstalling."
-  exit 1
+  exit 7
 else
   mkdir -p $BNC_FULLNODE_CONFIG_DIR
   cd $BNC_FULLNODE_DIR
